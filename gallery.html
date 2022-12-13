@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gallery_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap'); </style>
+    <title>Photo Gallery</title>
+</head>
+<body>
+    <div class="header bounce-in-top">
+        <div class="logo">
+            <img height="65" width="150" src="images/logo.png">
+        </div>
+        <div class="nav-bar">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="service.html">SERVICES</a>
+            <a href="news.html">NEWS</a>
+            <a href="gallery.html">PHOTOS</a>
+            <a href="team.html">TEAM</a>
+        </div>
+    </div>
+
+    <div class="logo bounce-in-top2">
+        <img height="65" width="150" src="images/logo.png">
+    </div>
+
+    <div class="header2 slide-in-left slide-out-left" id="header2">
+        <div class="nav-bar2">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="service.html">SERVICES</a>
+            <a href="news.html">NEWS</a>
+            <a href="gallery.html">PHOTOS</a>
+            <a href="team.html">TEAM</a>
+        </div>
+    </div>
+
+    <div class="open scale-out-center  bounce-in-top" id="open">
+        <button onclick="toggle_on()">O</button>
+    </div>
+    <div class="close scale-in-center" id="close">
+        <button onclick="toggle_off()">×</button>
+    </div>
+
+    <div class="side-bar">
+        <a href="signup.html"><button>Sign<br>Up</button></a>
+        <a href="signin.html"><button id="roll">Sign<br>In</button></a>
+    </div>
+
+    <div class="wrapper">
+        <div class="banner-img tracking-in-expand-fwd">
+            <h1>Photo Gallery</h1>
+            <p><span style="color:gold">Home</span> - Gallery</p>
+        </div>
+
+        <div class="photo">
+            <h2>Our Photo</h2>
+            <p>There are many variations of passages of lorem ispum available, but majority<br> have suffered alteration in same form, by injected humour, or randomized words<br> which dont't look even slightly believable.</p>
+            <div class="buttons">
+                <button onclick="block_1()">ALL</button>
+                <button onclick="block_2()">FISHING</button>
+                <button onclick="block_3()">ROOMS</button>
+                <button onclick="block_4()">KAYAKING</button>
+                <button onclick="block_5()">CYCLING</button>
+                <button onclick="block_6()">CAMPING</button>
+            </div>
+
+            <div class="gallery" id="all">
+                <div class="image1 swirl-in-fwd"><a href="images/pic1.webp"><img src="images/pic1.webp"></a></div>
+                <div class="image1 swirl-in-fwd"><a href="images/pic2.jpg"><img src="images/pic2.jpg"></a></div>
+                <div class="image1 swirl-in-fwd"><a href="images/pic3.jpg"><img src="images/pic3.jpg"></a></div>
+                <div class="image1 swirl-in-fwd"><a href="images/pic4.jpg"><img src="images/pic4.jpg"></a></div>
+                <div class="image1 swirl-in-fwd"><a href="images/pic5.jpg"><img src="images/pic5.jpg"></a></div>
+                <div class="image1 swirl-in-fwd"><a href="images/pic6.jpg"><img src="images/pic6.jpg"></a></div>
+                <div class="image1 swirl-in-fwd"><a href="images/pic7.jpg"><img src="images/pic7.jpg"></a></div>
+                <div class="image1 swirl-in-fwd"><a href="images/pic8.jpg"><img src="images/pic8.jpg"></a></div>
+                <div class="image1 swirl-in-fwd"><a href="images/pic9.jpg"><img src="images/pic9.jpg"></a></div>
+                <div class="image1 swirl-in-fwd"><a href="images/pic10.jpg"><img src="images/pic10.jpg"></a></div>
+                <div class="image1 swirl-in-fwd"><a href="images/pic11.jpg"><img src="images/pic11.jpg"></a></div>
+                <div class="image1 swirl-in-fwd"><a href="images/pic12.jpg"><img src="images/pic12.jpg"></a></div>
+            </div>
+
+            <div class="gallery fish" id="fish">
+                <div class="image2 tilt-in-tl"><a href="fishing/fish1.webp"><img src="fishing/fish1.webp"></a></div>
+                <div class="image2 tilt-in-tl"><a href="fishing/fish2.webp"><img src="fishing/fish2.webp"></a></div>
+                <div class="image2 tilt-in-tl"><a href="fishing/fish3.webp"><img src="fishing/fish3.webp"></a></div>
+                <div class="image2 tilt-in-tl"><a href="fishing/fish4.webp"><img src="fishing/fish4.webp"></a></div>
+                <div class="image2 tilt-in-tl"><a href="fishing/fish5.webp"><img src="fishing/fish5.webp"></a></div>
+                <div class="image2 tilt-in-tl"><a href="fishing/fish6.webp"><img src="fishing/fish6.webp"></a></div>
+            </div>
+
+            <div class="gallery rooms" id="rooms">
+                <div class="image3 slit-in-diagonal-2"><a href="rooms/room1.webp"><img src="rooms/room1.webp"></a></div>
+                <div class="image3 slit-in-diagonal-2"><a href="rooms/room2.webp"><img src="rooms/room2.webp"></a></div>
+                <div class="image3 slit-in-diagonal-2"><a href="rooms/room3.webp"><img src="rooms/room3.webp"></a></div>
+                <div class="image3 slit-in-diagonal-2"><a href="rooms/room4.jpg"><img src="rooms/room4.jpg"></a></div>
+            </div>
+
+            <div class="gallery kayak" id="kayak">
+                <div class="image4 tilt-in-tl"><a href="kayaking/kayak1.webp"><img src="kayaking/kayak1.webp"></a></div>
+                <div class="image4 tilt-in-tl"><a href="kayaking/kayak2.webp"><img src="kayaking/kayak2.webp"></a></div>
+                <div class="image4 tilt-in-tl"><a href="kayaking/kayak3.webp"><img src="kayaking/kayak3.webp"></a></div>
+                <div class="image4 tilt-in-tl"><a href="kayaking/kayak4.webp"><img src="kayaking/kayak4.webp"></a></div>
+                <div class="image4 tilt-in-tl"><a href="kayaking/kayak5.webp"><img src="kayaking/kayak5.webp"></a></div>
+                <div class="image4 tilt-in-tl"><a href="kayaking/kayak6.jpg"><img src="kayaking/kayak6.jpg"></a></div>
+            </div>
+
+            <div class="gallery cycle" id="cycle">
+                <div class="image5 slit-in-diagonal-2"><a href="cycling/cycle1.webp"><img src="cycling/cycle1.webp"></a></div>
+                <div class="image5 slit-in-diagonal-2"><a href="cycling/cycle2.webp"><img src="cycling/cycle2.webp"></a></div>
+                <div class="image5 slit-in-diagonal-2"><a href="cycling/cycle3.webp"><img src="cycling/cycle3.webp"></a></div>
+                <div class="image5 slit-in-diagonal-2"><a href="cycling/cycle4.webp"><img src="cycling/cycle4.webp"></a></div>
+                <div class="image5 slit-in-diagonal-2"><a href="cycling/cycle5.jpg"><img src="cycling/cycle5.jpg"></a></div>
+                <div class="image5 slit-in-diagonal-2"><a href="cycling/cycle6.webp"><img src="cycling/cycle6.webp"></a></div>
+            </div>
+
+            <div class="gallery camp" id="camp">
+                <div class="image6 tilt-in-tl"><a href="camping/camp1.webp"><img src="camping/camp1.webp"></a></div>
+                <div class="image6 tilt-in-tl"><a href="camping/camp2.webp"><img src="camping/camp2.webp"></a></div>
+                <div class="image6 tilt-in-tl"><a href="camping/camp3.webp"><img src="camping/camp3.webp"></a></div>
+                <div class="image6 tilt-in-tl"><a href="camping/camp4.webp"><img src="camping/camp4.webp"></a></div>
+                <div class="image6 tilt-in-tl"><a href="camping/camp5.webp"><img src="camping/camp5.webp"></a></div>
+                <div class="image6 tilt-in-tl"><a href="camping/camp6.jpg"><img src="camping/camp6.jpg"></a></div>
+                <div class="image6 tilt-in-tl"><a href="camping/camp7.webp"><img src="camping/camp7.webp" id="long"></a></div>
+                <div class="image6 tilt-in-tl"><a href="camping/camp8.jpg"><img src="camping/camp8.jpg"></a></div>
+                <div class="image6 tilt-in-tl"><a href="camping/camp9.webp"><img src="camping/camp9.webp"></a></div>
+                <div class="image6 tilt-in-tl"><a href="camping/camp10.webp"><img src="camping/camp10.webp"></a></div>
+                <div class="image6 tilt-in-tl"><a href="camping/camp11.webp"><img src="camping/camp11.webp"></a></div>
+                <div class="image6 tilt-in-tl"><a href="camping/camp12.webp"><img src="camping/camp12.webp"></a></div>
+            </div>
+        </div>
+
+        <div class="services">
+            <h2>Services List</h2>
+            <div class="ser-container">
+                <div class="ser-box">
+                    <img src="images/cycling.webp">
+                    <div class="ser-content">
+                        <h2>Cycling</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, voluptatibus aperiam reiciendis maxime qui ipsum! Velit quidem temporibus vitae...</p>
+                    </div>
+                </div>
+                <div class="ser-box">
+                    <img src="images/kayaking.webp">
+                    <div class="ser-content">
+                        <h2>Kayaking</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, voluptatibus aperiam reiciendis maxime qui ipsum! Velit quidem temporibus vitae...</p>
+                    </div>
+                </div>
+                <div class="ser-box">
+                    <img src="images/photography.webp">
+                    <div class="ser-content">
+                        <h2>Photo Tour</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, voluptatibus aperiam reiciendis maxime qui ipsum! Velit quidem temporibus vitae...</p>
+                    </div>
+                </div>
+            </div>
+            <a href="service.html"><button>KNOW MORE</button></a>
+        </div>
+
+        <div class="subs">
+            <h2>House In The <span style="color:gold;">Woods</span></h2>
+            <!-- <input placeholder="Your E-mail"> -->
+            <button class="hil-bhai"><a href="signup.html">SUBSCRIBE</a></button>
+        </div>
+
+        <div class="footer">
+            <div class="foot-box">
+                <img height="65" width="150" src="images/logo.png">
+                <p>Copyright 2022 <br>@Sudipta Saha.<br> All rights reserved.</p>
+            </div>
+            <div class="foot-box">
+                <h3>ABOUT US</h3>
+                <p>Lorem ipsum is simply dummy <br>text of the printing and <br>typesetting industry.</p>
+            </div>
+            <div class="foot-box">
+                <h3>CONTACT US</h3>
+                <p>1600 Amphitheatre Parkway<br>Mountain View, CA 94043<br>Phone: +1 650-253-0000</p>
+            </div>
+            <div class="foot-box">
+                <h3>SOCIALS</h3>
+                <div class="social">
+                    <a href="https://facebook.com"><img height="30" width="30" src="images/facebook.jpeg"></a>
+                    <a href="https://twitter.com"><img height="30" width="30" src="images/twitter.jpeg"></a>
+                    <a href="https://youtube.com"><img height="30" width="30" src="images/youtube.jpeg"></a>
+                    <a href="https://linkedin.com"><img height="30" width="30" src="images/linkedin.jpeg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/home.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/toggle.js"></script>
+</body>
+</html>

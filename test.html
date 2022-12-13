@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{
+        width:100%;
+        height:600px;
+        text-align: center;
+        display: flex;
+      }
+
+      .banner{
+        width:100%;
+        height:100%;
+        margin:auto;
+        border:5px solid gold;
+        animation-delay:3s ;
+      }
+
+      .banner2{
+        display:none;
+      }
+      .banner3{
+        display:none;
+      }
+      .banner4{
+        display:none;
+      }
+      .banner5{
+        display:none;
+      }
+
+      @-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(3000px);
+            transform: translateX(3000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(3000px);
+            transform: translateX(3000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-out-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+    opacity: 0;
+  }
+}
+@keyframes slide-out-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+    opacity: 0;
+  }
+}
+
+.slide-out-left {
+	-webkit-animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.slide-in-right {
+  display: block;
+	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="banner banner1 slide-out-left">
+        <h1>Banner 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae nam odit alias sapiente rem quam necessitatibus maxime, enim eligendi officiis iste pariatur aliquam, perspiciatis laboriosam quasi quia corrupti dolores reiciendis, debitis laudantium nesciunt illum? Minus ea dolores id. Similique labore, itaque adipisci quisquam iusto natus voluptates asperiores earum consectetur dolores provident voluptatem ullam modi quaerat voluptate dignissimos, dolorum dicta dolore laborum obcaecati facere dolorem. Ratione perspiciatis eius impedit similique eaque provident voluptates vitae pariatur sequi minus accusantium, nam quisquam, placeat ipsum. Incidunt, molestiae? Quisquam consequatur architecto saepe tempora earum, ducimus nemo esse adipisci accusamus quae, inventore alias, illo ratione!</p>
+      </div>
+      <div class="banner banner2 slide-in-right">
+        <h1>Banner 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae nam odit alias sapiente rem quam necessitatibus maxime, enim eligendi officiis iste pariatur aliquam, perspiciatis laboriosam quasi quia corrupti dolores reiciendis, debitis laudantium nesciunt illum? Minus ea dolores id. Similique labore, itaque adipisci quisquam iusto natus voluptates asperiores earum consectetur dolores provident voluptatem ullam modi quaerat voluptate dignissimos, dolorum dicta dolore laborum obcaecati facere dolorem. Ratione perspiciatis eius impedit similique eaque provident voluptates vitae pariatur sequi minus accusantium, nam quisquam, placeat ipsum. Incidunt, molestiae? Quisquam consequatur architecto saepe tempora earum, ducimus nemo esse adipisci accusamus quae, inventore alias, illo ratione!</p>
+      </div>
+      <div class="banner banner3">
+        <h1>Banner 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae nam odit alias sapiente rem quam necessitatibus maxime, enim eligendi officiis iste pariatur aliquam, perspiciatis laboriosam quasi quia corrupti dolores reiciendis, debitis laudantium nesciunt illum? Minus ea dolores id. Similique labore, itaque adipisci quisquam iusto natus voluptates asperiores earum consectetur dolores provident voluptatem ullam modi quaerat voluptate dignissimos, dolorum dicta dolore laborum obcaecati facere dolorem. Ratione perspiciatis eius impedit similique eaque provident voluptates vitae pariatur sequi minus accusantium, nam quisquam, placeat ipsum. Incidunt, molestiae? Quisquam consequatur architecto saepe tempora earum, ducimus nemo esse adipisci accusamus quae, inventore alias, illo ratione!</p>
+      </div>
+      <div class="banner banner4">
+        <h1>Banner 4</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae nam odit alias sapiente rem quam necessitatibus maxime, enim eligendi officiis iste pariatur aliquam, perspiciatis laboriosam quasi quia corrupti dolores reiciendis, debitis laudantium nesciunt illum? Minus ea dolores id. Similique labore, itaque adipisci quisquam iusto natus voluptates asperiores earum consectetur dolores provident voluptatem ullam modi quaerat voluptate dignissimos, dolorum dicta dolore laborum obcaecati facere dolorem. Ratione perspiciatis eius impedit similique eaque provident voluptates vitae pariatur sequi minus accusantium, nam quisquam, placeat ipsum. Incidunt, molestiae? Quisquam consequatur architecto saepe tempora earum, ducimus nemo esse adipisci accusamus quae, inventore alias, illo ratione!</p>
+      </div>
+      <div class="banner banner5">
+        <h1>Banner 5</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae nam odit alias sapiente rem quam necessitatibus maxime, enim eligendi officiis iste pariatur aliquam, perspiciatis laboriosam quasi quia corrupti dolores reiciendis, debitis laudantium nesciunt illum? Minus ea dolores id. Similique labore, itaque adipisci quisquam iusto natus voluptates asperiores earum consectetur dolores provident voluptatem ullam modi quaerat voluptate dignissimos, dolorum dicta dolore laborum obcaecati facere dolorem. Ratione perspiciatis eius impedit similique eaque provident voluptates vitae pariatur sequi minus accusantium, nam quisquam, placeat ipsum. Incidunt, molestiae? Quisquam consequatur architecto saepe tempora earum, ducimus nemo esse adipisci accusamus quae, inventore alias, illo ratione!</p>
+      </div>
+    </div>
+</body>
+</html>

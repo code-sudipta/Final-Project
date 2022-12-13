@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap'); </style>
+    <title>Sign Up Page</title>
+</head>
+<body>
+    <div class="header bounce-in-top">
+      <div class="logo">
+          <img height="65" width="150" src="images/logo.png">
+      </div>
+      <div class="nav-bar">
+          <a href="home.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="service.html">SERVICES</a>
+          <a href="news.html">NEWS</a>
+          <a href="gallery.html">PHOTOS</a>
+          <a href="team.html">TEAM</a>
+      </div>
+    </div>
+
+    <div class="logo2 bounce-in-top">
+      <img height="65" width="150" src="images/logo.png">
+    </div>
+
+    <div class="header2 slide-in-left slide-out-left" id="header2">
+      <div class="nav-bar2">
+          <a href="home.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="service.html">SERVICES</a>
+          <a href="news.html">NEWS</a>
+          <a href="gallery.html">PHOTOS</a>
+          <a href="team.html">TEAM</a>
+      </div>
+  </div>
+
+  <div class="open scale-out-center  bounce-in-top" id="open">
+      <button onclick="toggle_on()">O</button>
+  </div>
+  <div class="close scale-in-center" id="close">
+      <button onclick="toggle_off()">×</button>
+  </div>
+
+    <div class="side-bar">
+      <a href="signup.html"><button>Sign<br>Up</button></a>
+      <a href="signin.html"><button id="roll">Sign<br>In</button></a>
+    </div>
+
+    <h1>SIGN UP</h1>
+
+    <form method="POST">
+        <div class="element">
+          <label for="user_name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" name="full_name" id="full_name" placeholder="Full name..">
+        </div>
+        <div class="element">
+            <label for="user_name" class="form-label">User Name</label>
+            <input type="text" class="form-control" name="user_name" id="user_name" placeholder="User name..">
+          </div>
+         <div class="element">
+            <label for="user_email" class="form-label">Email address</label>
+            <input type="email" class="form-control" name="user_email" id="user_email" placeholder="name@example.com">
+          </div>
+
+          <div class="element">
+            <label for="user_pass" class="form-label">Password</label>
+            <input type="password" class="form-control" name="user_pass" id="user_pass" placeholder="">
+          </div>
+
+          <div class="element">
+             
+            <button class="btn"
+             onclick="signUp()">SAVE</button>
+            
+          </div>
+    </form>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/toggle.js"></script>
+</body>
+</html>

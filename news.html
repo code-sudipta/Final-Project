@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/news_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap'); </style>
+    <title>News</title>
+</head>
+<body>
+    <div class="header bounce-in-top">
+        <div class="logo">
+            <img height="65" width="150" src="images/logo.png">
+        </div>
+        <div class="nav-bar">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="service.html">SERVICES</a>
+            <a href="news.html">NEWS</a>
+            <a href="gallery.html">PHOTOS</a>
+            <a href="team.html">TEAM</a>
+        </div>
+    </div>
+
+    <div class="logo2 bounce-in-top">
+        <img height="65" width="150" src="images/logo.png">
+    </div>
+
+    <div class="header2 slide-in-left slide-out-left" id="header2">
+        <div class="nav-bar2">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="service.html">SERVICES</a>
+            <a href="news.html">NEWS</a>
+            <a href="gallery.html">PHOTOS</a>
+            <a href="team.html">TEAM</a>
+        </div>
+    </div>
+
+    <div class="open scale-out-center  bounce-in-top" id="open">
+        <button onclick="toggle_on()">O</button>
+    </div>
+    <div class="close scale-in-center" id="close">
+        <button onclick="toggle_off()">×</button>
+    </div>
+
+    <div class="side-bar">
+        <a href="signup.html"><button>Sign<br>Up</button></a>
+        <a href="signin.html"><button id="roll">Sign<br>In</button></a>
+    </div>
+
+    <div class="wrapper">
+        <div class="banner-img tracking-in-expand-fwd">
+            <h1>News</h1>
+            <p><span style="color:gold">Home</span> - Our News</p>
+        </div>
+
+        <div class="news">
+            <div class="article">
+                <img height="350" width="700" src="images/news.webp">
+                <h2>Single Article</h2>
+                <p>There are  many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or  randomised words which don't look even slightly believable.</p>
+                <p>There are  many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or  randomised words which don't look even slightly believable. There are  many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or  randomised words which don't look even slightly believable.</p>
+                <h3>Our Advantages</h3>
+                <ul>
+                    <li>Entertainment in the mountains.</li>
+                    <li>The best views</li>
+                    <li>Cycling</li>
+                    <li>Hike in the mountains</li>
+                    <li>Fishing</li>
+                </ul>
+                <p class="para" style="color:black;"><i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam modi commodi, officia nisi maiores praesentium corrupti animi eos voluptates. Repellendus?</i></p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit suscipit, expedita similique corrupti tempora aspernatur nisi fugit itaque dolorum! Harum exercitationem voluptatibus provident mollitia, aut, molestiae officia sequi vero magni eveniet molestias. Corporis, eos! Quis cupiditate eum blanditiis incidunt libero.</p>
+            </div>
+            <div class="news-col">
+                <div class="col-box">
+                    <h3>Other News</h3>
+                    <div class="news-box">
+                        <img height="70" width="70" src="images/news1.webp">
+                        <p><span>21 APR, 2022</span><br><span style="font-size:smaller; opacity:0.7;">Good Weather</span></p>
+                    </div>
+                    <div class="news-box">
+                        <img height="70" width="70" src="images/news2.webp">
+                        <p><span>02 JUN, 2022</span><br><span style="font-size:smaller; opacity:0.7;">Season Discounts</span></p>
+                    </div>
+                    <div class="news-box">
+                        <img height="70" width="70" src="images/news3.webp">
+                        <p><span>03 MAR, 2022</span><br><span style="font-size:smaller; opacity:0.7;">Photographer</span></p>
+                    </div>
+                </div>
+                <div class="col-box">
+                    <h3>Recent Tweets</h3>
+                    <p><b>@AnSin</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><span style="font-size:smaller; opacity:0.7;">20 minutes ago</span></p>
+                    <p><b>@June</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><span style="font-size:smaller; opacity:0.7;">2 hours ago</span></p>
+                    <p><b>@Anay</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><span style="font-size:smaller; opacity:0.7;">12 hours ago</span></p>
+                </div>
+                <div class="col-box">
+                    <h3>Tags</h3>
+                    <button>Camping</button>
+                    <button>Fishing</button>
+                    <button>Cycling</button>
+                    <button>Kayaking</button>
+                    <button>Fishing</button>
+                    <button>Photo</button>
+                    <button>Modern</button>
+                    <button>Fresh</button>
+                    <button>Responsive</button>
+                    <button>Forest</button>
+                    <button>House in the Woods</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="subs">
+            <h2>House In The <span style="color:gold;">Woods</span></h2>
+            <!-- <input placeholder="Your E-mail"> -->
+            <button class="hil-bhai"><a href="signup.html">SUBSCRIBE</a></button>
+        </div>
+
+        <div class="footer">
+            <div class="foot-box">
+                <img height="65" width="150" src="images/logo.png">
+                <p>Copyright 2022 <br>@Sudipta Saha.<br> All rights reserved.</p>
+            </div>
+            <div class="foot-box">
+                <h3>ABOUT US</h3>
+                <p>Lorem ipsum is simply dummy <br>text of the printing and <br>typesetting industry.</p>
+            </div>
+            <div class="foot-box">
+                <h3>CONTACT US</h3>
+                <p>1600 Amphitheatre Parkway<br>Mountain View, CA 94043<br>Phone: +1 650-253-0000</p>
+            </div>
+            <div class="foot-box">
+                <h3>SOCIALS</h3>
+                <div class="social">
+                    <a href="https://facebook.com"><img height="30" width="30" src="images/facebook.jpeg"></a>
+                    <a href="https://twitter.com"><img height="30" width="30" src="images/twitter.jpeg"></a>
+                    <a href="https://youtube.com"><img height="30" width="30" src="images/youtube.jpeg"></a>
+                    <a href="https://linkedin.com"><img height="30" width="30" src="images/linkedin.jpeg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/home.js"></script>
+    <script src="js/toggle.js"></script>
+</body>
+</html>
